@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>최애 앨범 소개</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #39f114, #ff1493);
+            color: #ffffff;
+            font-family: 'Arial', sans-serif;
+            padding: 20px;
+        }
+
+        #album-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        #album-header h1 {
+            font-size: 48px;
+            margin: 10px 0;
+        }
+
+        section {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 30px;
+            transition: all 0.3s ease;
+        }
+
+        section:hover {
+            background: rgba(255, 255, 255, 0.12);
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        section h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #39f114;
+        }
+
+        .lyrics-box {
+            background: rgba(255, 255, 255, 0.1);
+            border-left: 4px solid #ff1493;
+            border-radius: 8px;
+            padding: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .lyrics-box:hover {
+            background: rgba(255, 255, 255, 0.15);
+            padding-left: 25px;
+        }
+
+        .highlight {
+            color: #ff1493;
+            font-weight: bold;
+        }
+
+        #track-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th {
+            background: rgba(57, 241, 20, 0.3);
+            color: #39f114;
+            padding: 15px;
+            text-align: left;
+            font-weight: bold;
+            border-bottom: 2px solid rgba(255, 20, 147, 0.5);
+        }
+
+        td {
+            padding: 15px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+        }
+
+        tbody tr {
+            transition: all 0.3s ease;
+        }
+
+        tbody tr:hover {
+            background: rgba(255, 20, 147, 0.15);
+        }
+
+        .listen-btn {
+            background: linear-gradient(135deg, #39f114, #00d4ff);
+            color: #000000;
+            border: none;
+            border-radius: 50px;
+            padding: 15px 40px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(57, 241, 20, 0.4);
+        }
+
+        .listen-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(57, 241, 20, 0.6);
+        }
+
+        #album-footer {
+            text-align: center;
+            padding: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="album-header">
+        <p class="artist-name">Yasuha</p>
+        <h1>2조 플레이리스트</h1>
+        <p class="subtitle">각자의 취향 담긴 플레이리스트</p>
+    </header>
+
+    <section class="lyrics-section">
+        <h2>🎵 킬링 파트 가사</h2>
+        <div class="lyrics-box">
+            <p>"はじけるネオンサイン"</p>
+            <p class="highlight">"It's so Fly-Day, Fly-Day Chinatown 真夜中の人ごみに"</p>
+            <p>"港の見える場所で 何か飲みたいのよ"</p>
+        </div>
+    </section>
+
+    <section class="info-section">
+        <h2>✨ 입덕 포인트</h2>
+        <ul id="charm-list">
+            <li>재즈, 펑크, 소울 요소가 결합된 독특한 사운드가 특징으로 80년대 일본 시티팝의 분위기를 담고 있어 시티팝의 매력을 한곡으로 느껴볼 수 있음</li>
+            <li>yasuha의 시원하면서도 독특한 목소리 덕에 곡을 더욱 매력적으로 만들어준다.</li>
+            <li>Fly-day Chinatown~~으로 이어지는 후렴이 단번에 귀에 꽂혀 지금 들어도 촌스럽지 않고 노래의 전반적인 레트로함이 오히려 좋게 다가옴</li>
+        </ul>
+    </section>
+
+    <section class="track-section">
+        <h2>🎧 추천 플레이리스트</h2>
+        <table id="track-table">
+            <thead>
+                <tr>
+                    <th>Track</th>
+                    <th>곡명</th>
+                    <th>Play Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>01</td>
+                    <td>Fly-day Chinatown</td>
+                    <td>3:28</td>
+                </tr>
+                <tr>
+                    <td>02</td>
+                    <td>Cruel Summer</td>
+                    <td>2:58</td>
+                </tr>
+                <tr>
+                    <td>03</td>
+                    <td>LOV3</td>
+                    <td>3:56</td>
+                </tr>
+                <tr>
+                    <td>04</td>
+                    <td>들키고 싶은 마음에게</td>
+                    <td>6:16</td>
+                </tr>
+                <tr>
+                    <td>05</td>
+                    <td>Plastic Plants</td>
+                    <td>3:19</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <footer id="album-footer">
+        <button class="listen-btn">전곡 스밍하러 가기</button>
+    </footer>
+</body>
+
+</html>
